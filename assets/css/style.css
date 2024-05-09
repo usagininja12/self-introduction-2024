@@ -1,9 +1,11 @@
 @charset "utf-8";
-
 body{
     background-color: #5eccff;
 }
-
+/* .BG{
+    background-image: url(../img/usa_trio.png);
+    background-blend-mode: luminosity;
+} */
 header,footer{
     display: flex;
     justify-content: center;
@@ -36,9 +38,15 @@ main{
     display: flex;
     flex-direction: column;
 }
+.profile_all,.like_all,.other_all{
+    margin-bottom: 2rem;
+}
 .profile{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.profile_all h2{
+    margin-bottom: 1rem;
 }
 .profile_img img{
     width: 200px;
@@ -51,14 +59,18 @@ span{
 .sns_icon{
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
 .sns img {
     width: 50px;
     margin: 2rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-.twitter img{
-    width: 160px;
-}
+/* .twitter img{
+    width: 2rem;
+} */
 .youtube img{
-    width: 180px;
+    width: 3.8rem;
 }
